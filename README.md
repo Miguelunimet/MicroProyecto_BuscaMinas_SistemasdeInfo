@@ -1,0 +1,1 @@
+# MicroProyecto_BuscaMinas_SistemasdeInfo
