@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../Modelos/tablero.dart';
 import '../Modelos/casillas.dart';
 import 'servicio_puntuacion.dart';
@@ -27,20 +28,33 @@ class _PantallaJuegoState extends State<PantallaJuego> {
   int _segundosTranscurridos = 0;
   bool _juegoIniciado = false;
   int _banderasColocadas = 0;
-
-  // Controladores para la animación de "latido" del reloj
   double _escalaReloj = 1.0;
+
+  
+  String _estiloLetraActual = 'Clásico'; 
 
   @override
   void initState() {
     super.initState();
     _reiniciarPartida();
+    _cargarEstiloConfigurado(); 
   }
 
   @override
   void dispose() {
     _detenerReloj();
     super.dispose();
+  }
+
+  
+  Future<void> _cargarEstiloConfigurado() async {
+    final prefs = await SharedPreferences.getInstance();
+    String estiloGuardado = prefs.getString('estiloNumeros') ?? 'Clásico';
+    if (mounted) {
+      setState(() {
+        _estiloLetraActual = estiloGuardado;
+      });
+    }
   }
 
   void _reiniciarPartida() {
@@ -63,11 +77,9 @@ class _PantallaJuegoState extends State<PantallaJuego> {
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         _segundosTranscurridos++;
-        // Hace que la escala suba a 1.2 instantáneamente
         _escalaReloj = 1.2;
       });
       
-      // A los 150 milisegundos regresa a su tamaño normal (1.0) para simular el latido
       Future.delayed(const Duration(milliseconds: 150), () {
         if (mounted) {
           setState(() {
@@ -82,23 +94,19 @@ class _PantallaJuegoState extends State<PantallaJuego> {
     _timer?.cancel();
   }
 
-void _revelarCasilla(Casilla casilla) {
+  void _revelarCasilla(Casilla casilla) {
     if (casilla.estaRevelada || casilla.tieneBandera) return;
 
     setState(() {
-      // ⏱️ Si el juego no ha iniciado, arrancamos el reloj y marcamos el inicio
       if (!_juegoIniciado) {
         _juegoIniciado = true;
         _iniciarReloj();
       }
 
-      // 🚀 Si las minas NO han sido colocadas en el tablero, significa que este es el PRIMER CLIC.
-      // Inicializamos las minas protegiendo la fila y columna de esta casilla exacta.
       if (!delTablero.minasColocadas) {
         delTablero.inicializarMinas(casilla.fila, casilla.columna);
       }
 
-      // Ahora que las minas están puestas de forma segura, procedemos a revelar
       casilla.estaRevelada = true;
 
       if (casilla.tieneMina) {
@@ -167,10 +175,7 @@ void _revelarCasilla(Casilla casilla) {
     if (gano) {
       _detenerReloj();
 
-      // Creamos un identificador de dificultad único usando el tamaño de la matriz (Ej: "6x6")
       String dificultadKey = '${widget.filas}x${widget.columnas}';
-      
-      // Llamamos al servicio para validar si es un nuevo mejor tiempo
       bool esNuevoRecord = await ServicioPuntuacion.verificarYGuardarRecord(dificultadKey, _segundosTranscurridos);
 
       String mensajeVictoria = 'Completaste el juego en $_segundosTranscurridos segundos.';
@@ -178,14 +183,12 @@ void _revelarCasilla(Casilla casilla) {
       if (esNuevoRecord) {
         mensajeVictoria += '\n\n🥳 ¡NUEVO RÉCORD HISTÓRICO! 🥳';
       } else {
-        // Si no fue récord, le mostramos cuál es el récord actual para que intente superarlo
         int? recordActual = await ServicioPuntuacion.obtenerRecord(dificultadKey);
         if (recordActual != null) {
           mensajeVictoria += '\n(El récord actual es de $recordActual segundos)';
         }
       }
 
-      // Mostramos el diálogo final con toda la información cargada
       _mostrarDialogoFin(mensajeVictoria, '¡Ganaste! 🏆');
     }
   }
@@ -237,7 +240,6 @@ void _revelarCasilla(Casilla casilla) {
       ),
       body: Column(
         children: [
-          // MARCADOR SUPERIOR: Reloj con animación de latido incluida
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 24.0),
             child: Row(
@@ -254,14 +256,13 @@ void _revelarCasilla(Casilla casilla) {
                   icono: Icons.timer,
                   colorIcono: Colors.amber,
                   valor: '$_segundosTranscurridos s',
-                  escala: _escalaReloj, // Pasa el valor dinámico del latido
+                  escala: _escalaReloj,
                   context: context,
                 ),
               ],
             ),
           ),
           
-          // TABLERO DE JUEGO
           Expanded(
             child: Center(
               child: Padding(
@@ -359,11 +360,26 @@ void _revelarCasilla(Casilla casilla) {
       return const Icon(Icons.brightness_7, color: Colors.white);
     }
     if (casilla.minasAlrededor > 0) {
+      
+      final esRetro = _estiloLetraActual == 'Retro';
+
       return Text(
         '${casilla.minasAlrededor}',
         style: TextStyle(
-          fontWeight: FontWeight.bold,
-          color: _obtenerColorNumero(casilla.minasAlrededor, esOscuro),
+          fontWeight: FontWeight.w900, 
+          fontSize: esRetro ? 26 : 18,            
+          fontFamily: esRetro ? 'Pixel' : null, 
+          fontFamilyFallback: esRetro ? const ['monospace', 'Courier'] : null,
+          color: _obtenerColorNumero(casilla.minasAlrededor, esOscuro), 
+          
+          shadows: esRetro 
+              ? const [
+                  Shadow(offset: Offset(-2, -2), color: Colors.black),
+                  Shadow(offset: Offset(2, -2), color: Colors.black),
+                  Shadow(offset: Offset(2, 2), color: Colors.black),
+                  Shadow(offset: Offset(-2, 2), color: Colors.black),
+                ]
+              : null,
         ),
       );
     }
@@ -371,11 +387,55 @@ void _revelarCasilla(Casilla casilla) {
   }
 
   Color _obtenerColorNumero(int numero, bool esOscuro) {
-    switch (numero) {
-      case 1: return Colors.blue[800]!;
-      case 2: return Colors.green[700]!;
-      case 3: return Colors.red[700]!;
-      default: return Colors.purple;
+    switch (_estiloLetraActual) {
+      case 'Colorido':
+        List<Color> coloresVivos = [
+          Colors.transparent,
+          Colors.cyanAccent,   
+          Colors.greenAccent,  
+          Colors.pinkAccent,   
+          Colors.purpleAccent, 
+          Colors.orangeAccent, 
+          Colors.yellowAccent, 
+          Colors.green,      
+          Colors.redAccent,    
+        ];
+        return coloresVivos[numero];
+
+      case 'Retro':
+        List<Color> coloresRetro = [
+          Colors.transparent,
+          const Color(0xFF00FF00), 
+          const Color(0xFF00FFFF), 
+          const Color(0xFFFF00FF), 
+          const Color(0xFFFFCC00), 
+          const Color(0xFFFF3333), 
+          Colors.indigoAccent,
+          Colors.teal,
+          Colors.amber,
+        ];
+        return coloresRetro[numero];
+
+      case 'Minimalista':
+        if (esOscuro) {
+          return numero % 2 == 0 ? Colors.white : Colors.grey[400]!;
+        } else {
+          return numero % 2 == 0 ? Colors.black87 : Colors.grey[700]!;
+        }
+
+      case 'Clásico':
+      default:
+        switch (numero) {
+          case 1: return Colors.blue[800]!;
+          case 2: return Colors.green[700]!;
+          case 3: return Colors.red[700]!;
+          case 4: return const Color(0xFF010080); 
+          case 5: return const Color(0xFF800000); 
+          case 6: return const Color(0xFF008080); 
+          case 7: return Colors.black;
+          case 8: return Colors.grey;
+          default: return Colors.purple;
+        }
     }
   }
 }
