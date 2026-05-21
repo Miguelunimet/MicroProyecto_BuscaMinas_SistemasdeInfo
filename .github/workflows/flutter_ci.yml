@@ -1,11 +1,7 @@
 name: Flutter CI
 
-# Se ejecuta cada vez que haces push a la rama main
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# Se ejecuta cada vez que haces push o pull request en CUALQUIER rama
+on: [push, pull_request]
 
 jobs:
   build:
@@ -39,4 +35,11 @@ jobs:
 
     # 6. Compila para Web para verificar que todo corra perfecto
     - name: Build Web
-      run: flutter build web --release
+      run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+    # 7. Sube el juego compilado a GitHub Pages automáticamente
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: build/web
