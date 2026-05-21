@@ -59,7 +59,7 @@ class _PantallaDeCargaState extends State<PantallaDeCarga> {
                         shape: BoxShape.circle,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.3),
+                            color: Colors.black.withValues(alpha: 0.3),
                             blurRadius: 20,
                           )
                         ],
@@ -86,7 +86,7 @@ class _PantallaDeCargaState extends State<PantallaDeCarga> {
                       'UNIMET - 2026',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.white.withOpacity(0.7),
+                        color: Colors.white.withValues(alpha: 0.7),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -101,7 +101,7 @@ class _PantallaDeCargaState extends State<PantallaDeCarga> {
             child: TextButton(
               onPressed: widget.alTerminar,
               style: TextButton.styleFrom(
-                backgroundColor: Colors.white.withOpacity(0.2),
+                backgroundColor: Colors.white.withValues(alpha: 0.2),
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),

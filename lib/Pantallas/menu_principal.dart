@@ -195,7 +195,7 @@ class _BotonAnimadoState extends State<_BotonAnimado> {
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: widget.color.withOpacity(0.4),
+                color: widget.color.withValues(alpha: 0.4),
                 blurRadius: _estaEncima ? 15 : 8,
                 offset: _estaEncima ? const Offset(0, 6) : const Offset(0, 3),
               ),
