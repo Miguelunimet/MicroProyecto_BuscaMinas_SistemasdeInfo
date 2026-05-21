@@ -1,0 +1,28 @@
+# --- Estándar de Flutter ---
+.dart_tool/
+.devTools
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# --- Archivos de plataformas específicos ---
+android/**/generated/
+ios/.symlinks/
+ios/Pods/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
+# --- Parche para Desktop (Lo que te estaba bloqueando) ---
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
+*generated_plugin_registrant*
+*.cmake
+
+# --- Herramientas de desarrollo ---
+.vscode/
+.idea/
+*.iml
