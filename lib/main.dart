@@ -19,7 +19,7 @@ class _MiBuscaminasState extends State<MiBuscaminas> {
 
   void _cambiarTema(bool valor) {
     setState(() {
-      _esModoOscuro = valor;
+      _esModoOscuro = !_esModoOscuro; 
     });
   }
 

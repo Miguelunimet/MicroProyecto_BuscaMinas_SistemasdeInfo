@@ -1,0 +1,243 @@
+{
+   "checksum": "2e02d6057d824e5abc9a2b78cae70608",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13255392659811460",
+            "date_last_used": "13423184483710643",
+            "guid": "a99fcf04-392c-4b10-9f58-a657d6418f72",
+            "id": "10",
+            "name": "Youtube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/?hl=es-419&gl=VE",
+            "visit_count": 251
+         }, {
+            "date_added": "13348003745707933",
+            "date_last_used": "13423713781800665",
+            "guid": "1f58e66e-f6d6-4280-90b4-e2198fd84003",
+            "id": "11",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Recibidos (282) - miguel.sulbaran.950@gmail.com - Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox",
+            "visit_count": 256
+         }, {
+            "date_added": "13377042091940890",
+            "date_last_used": "13413854758192685",
+            "guid": "ce13fcd6-f02b-4955-ae56-1303dc43a630",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "miguel1011s | Fiverr",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://es.fiverr.com/miguel1011s?up_rollout=true",
+            "visit_count": 10
+         }, {
+            "date_added": "13395702681442906",
+            "date_last_used": "13413839116054286",
+            "guid": "949c78c1-5bfb-4b6d-9e86-4e325cca69ca",
+            "id": "13",
+            "name": "Acordes para Cuatro",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://tucuatro.com/es/acordes/calculadora-de-acordes-para-cuatro/",
+            "visit_count": 5
+         }, {
+            "date_added": "13417832368040989",
+            "date_last_used": "13423428092127790",
+            "guid": "01894a03-f91e-4fe0-895d-e5af85ed8760",
+            "id": "14",
+            "name": "Spotify",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://open.spotify.com/intl-es/",
+            "visit_count": 19
+         }, {
+            "date_added": "13410045773354759",
+            "date_last_used": "13423791685907200",
+            "guid": "ed762dee-0363-4b63-b13a-6a958549341f",
+            "id": "15",
+            "name": "Repeat.gg",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.repeat.gg/mobile/compete",
+            "visit_count": 136
+         }, {
+            "date_added": "13410158900868202",
+            "date_last_used": "13423713642414606",
+            "guid": "52eba6bb-83af-494c-b9c5-7ef53ba6f82b",
+            "id": "16",
+            "name": "Discord",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://discord.com/channels/@me",
+            "visit_count": 84
+         }, {
+            "date_added": "13410303301525442",
+            "date_last_used": "13413839114458564",
+            "guid": "ea0c684b-3faa-4379-a60d-a9f1e4bd6669",
+            "id": "17",
+            "name": "Lista de acordes",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.micuatro.com/acordes/lista-de-acordes/",
+            "visit_count": 5
+         }, {
+            "date_added": "13411513179054429",
+            "date_last_used": "13416445328814754",
+            "guid": "5cd6bde5-413c-4fd8-8986-e053614cb8df",
+            "id": "18",
+            "name": "ChatGPT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chatgpt.com/",
+            "visit_count": 21
+         }, {
+            "date_added": "13413838293346616",
+            "date_last_used": "0",
+            "guid": "57605cc0-5a82-4c69-9dad-622ba94cf6ba",
+            "id": "19",
+            "name": "PACK EDITORES 2024",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/14LcNbuYdJ6jFvXbon_szeLlM7C9W_JGB",
+            "visit_count": 1
+         }, {
+            "date_added": "13413838206516363",
+            "date_last_used": "0",
+            "guid": "9ce513d8-30cd-45d0-8aef-80853290dcba",
+            "id": "20",
+            "name": "RECURSOS FX",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/1LHEUwpzkXcHQeEV3veJ4YoEKA6itypca",
+            "visit_count": 1
+         }, {
+            "date_added": "13415661061005674",
+            "date_last_used": "0",
+            "guid": "11f2cd27-77ff-4a8a-ad90-6908f8eba376",
+            "id": "21",
+            "name": "Flags",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "edge://flags/",
+            "visit_count": 1
+         }, {
+            "date_added": "13418013809840238",
+            "date_last_used": "0",
+            "guid": "983482c6-c87a-41e1-b9b2-4fee0aa6144e",
+            "id": "22",
+            "name": "PL Prodigy",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://powerleagueprodigy.com/plprodigy",
+            "visit_count": 1
+         }, {
+            "date_added": "13422120812618057",
+            "date_last_used": "13423446787098053",
+            "guid": "e083ce0b-c9c3-4543-9d16-256671615cb5",
+            "id": "23",
+            "name": "Torneos Gaming Diarios | Donde el Gaming Paga",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.gamercraft.com/es/ladders?game=BWS",
+            "visit_count": 2
+         }, {
+            "children": [ {
+               "date_added": "13255361587280189",
+               "date_last_used": "0",
+               "guid": "0f63c369-660e-44d5-8feb-b6362b47c3ad",
+               "id": "25",
+               "name": "Lenovo Support",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://support.lenovo.com/",
+               "visit_count": 0
+            }, {
+               "date_added": "13255361587295819",
+               "date_last_used": "0",
+               "guid": "54ca0e48-491d-400d-bc45-ea13e6172e82",
+               "id": "26",
+               "name": "Lenovo",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.lenovo.com/",
+               "visit_count": 0
+            } ],
+            "date_added": "13423795124552432",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "bb42245b-1355-4ae2-acb6-518049c37c64",
+            "id": "24",
+            "name": "Lenovo",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13423795120420842",
+         "date_last_used": "0",
+         "date_modified": "13422120812618057",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13423795120420842",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Otros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13423795120420842",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos móviles",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13423795120420842",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Áreas de trabajo",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCGFG1EeeAQAAEgAqGGxzTVN2a3NwK2VLN0dhbUJ1UkV1Wnc9PUgDoAYMEo4BCAMSiQEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJGYxZGJjZGQ3LTJlMWMtNTVmZS1iMzZjLTkzN2ExNDA2YTM0YhgAIAAoADCzl+jv8C44wciU948wQMHIlPePMEoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAADCPgJgABKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQxMDU0ZmFjYy03M2RlLTVlNDUtODZmNC1jNjkwMTY2Y2ZhODAYACAAKAAwrpfo7/AuONTHlPePMEDUx5T3jzBKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrgEIDBKpAQocWkxuOVB5M0t3Z0d1WkgxYUY3NGJTRmJ0MmY0PRIkY2UxM2ZjZDYtZjAyYi00OTU1LWFlNTYtMTMwM2RjNDNhNjMwGAAgACgAMLLQ17q/MzjfkfSptjJA35H0qbYyShxabDJBT1hwWGpQbDBGZFdGQlNIQ2doTEQyMms9WiAiHv/rNExFWnluODYxZWdEcUlYN3l1ZG1kU1J1V0pzPWXHz11ewj4CYAUSrwEIEhKqAQocZVlLODlWWlJOVnFqNkVmdWdKeUxTKzJSbUJJPRIkNWNkNmJkZTUtNDEzYy00ZmQ4LTg5ODYtZTA1MzYxNGNiOGRmGAAgACgAMPTNm57iMzj5hJHetjNA+YSR3rYzShxGbE5mbmlTN0J2Z1NidExTWi82ZFFzSmFGOWM9WiEiH///6Gt1MjFrbE9iTzBLSHg2NGpqYU1wN0hEU3VnUT1lhqXYyMI+AmAFEq8BCBESqgEKHHNmUVE2eTVzWFh6S2U4aXhCM1B5dCsrS1I3ND0SJGVhMGM2ODRiLTNmYWEtNDM3OS1hNjBkLWE5ZjFlNGJkNjY2ORgAIAAoADCG4JyzvzM46PqbnbIzQOj6m52yM0ocUDk0RzJxbTJMY3JpR0ZCTC9nYzJzbzE1OGM4PVohIh///9FRMktEQlVPbXFFRmRDNFNjaHBQKzlsa252czQ9ZSGVM6PCPgJgBRKvAQgUEqoBChxNaGc0QVFYY3BRYndOV2ZsS2s1QjdVa0pkZXM9EiQ5Y2U1MTNkOC0zMGNkLTQ1ZDAtOGFlZi04MDg1MzI5MGRjYmEYACAAKAAwntflsr8zOIC+5bK/M0CAvuWyvzNKHFpXc0ZoY3dFR3dxZzNNWWdsN2RzdHR3STNJWT1aISIf///0VGpyVzhKejc5bTBDUlRFRitGQ1Vkbkh6M2pjPWVqZO4Swj4CYAUSrQEIChKoAQocdXl4KzR1TVZIYUtGaUtSUUt2OFc4T0Y2MytVPRIkODRjZjgzMmUtMGI1OS00YWRkLWEzMWItZGY0MDkzNzY2MzZiGAAgACgAMMSHuZviMzjL5JT3jzBAy+SU948wShx5cG90MWFPOXNlbGY1SnJLTnk1NFBvWGI5WkU9Wh8iHehKRmZCSlZXSFNjdDZkN2NRbW0reHd5UDBOTlU9ZVBCw9LCPgJgBRKOAQgFEokBChx3UkJyWkwrNlBBOWF2S2dqTlA3SlhETGNmdnM9EiQ4MWFhM2UzYi1mZGVlLTUwMTAtYjYzYS1mN2ZhMWNmMmJlNzQYACAAKAAw/ubA26QzOMTnwNukM0DE58DbpDNKHG5teDY1c1FEdnhJOFRnRWV2K0ErbnR0b1NuND1aAGUAAAAAwj4CYAASrgEICxKpAQocYnpPOWFySDF2VDlnSWk5dlFtQXRhSUlHMUVRPRIkMWY1OGU2NmUtZjZkNi00MjgwLTkwYjQtZTIxOThmZDg0MDAzGAAgACgAMITb6pfkMzj/77ySyjFA/++8ksoxShxGd2UzcVJoRGk4USt4RzNVOUtWVXBIUThpM2s9WiAiHv/WZ1JKbnV3bDlLd21aOG8zTFdRdkx0MG5jTEVnPWVeOChUwj4CYAUSrwEIEBKqAQocVm5zQ1g0d2NCcEhRL21oUjlFdXpjRldibzhRPRIkNTJlYmE2YmItODNhZi00OTRjLWI5YzUtN2VmNTNiYTZmODJiGAAgACgAMMau4pfkMziOwa7YsTNAjsGu2LEzShwzU1c2V1lzdDN5bUVhTnBBOGc5QURHWVM0WjA9WiEiH///o0YzT0pMZ1VyNGJhQXBacThSTDJ0d1FKNWxEbz1lJj1VOcI+AmAFEq8BCBUSqgEKHFFPV25JZnRMU0dEcStHZU5WWXR3VW1kcDNXST0SJDExZjJjZDI3LTc3ZmYtNGE4YS1hZDkwLTY5MDhmOGViYTM3NhgAIAAoADCctYCYxjM4iuf/l8YzQIrn/5fGM0ocMTl2YS9kOXRFK2huVlpYQUpwN3V6MjZ4U2hVPVohIh////pjeXR3TTZyeHJSbDdnWVVBYmU2NFByNFBpNGM9ZfoeIeHCPgJgBRKuAQgNEqkBChxsN2I4dThVOHNyaXZ3NXdQSjZUVWxiL2ttOEE9EiQ5NDljNzhjMS01YmZiLTRiNmQtOWU4Ni00ZTMyNWNjYTY5Y2EYACAAKAAwgvOcs78zONfhjOv7MkDX4Yzr+zJKHHBzU1JLNjF5WTFhcFMzUnl1SFdVTW43WVQrUT1aICIe//owOW9raUFhTVRKWE1zV1NMWXJZZXMxOTZsSDQ9ZVwzlwHCPgJgBRKuAQgOEqkBChw1OTR4ZUEvRXQzRkd6NDdMd2cybmNUaWJxZmM9EiQwMTg5NGEwMy1mOTFlLTRmZTAtODk1ZC1lNWFmODVlZDg3NjAYACAAKAAw1trNj+MzOLvXraPOM0C7162jzjNKHEFmblp5Y2Q5eFNFV3dubzBOR1dYU1FEcHhPST1aICIe//x0enQzczlSZ29Jd1pXaXJ1YStNQVdYWUs0cnM9ZTaHcFbCPgJgBRKuAQgPEqkBChxnZjRreHR5MTlvVmozOU40MFdpSmpyWjNtUlE9EiRlZDc2MmRlZS0wMzYzLTRiNjMtYjEzYS02YTk1ODU0OTM0MWYYACAAKAAwgNL9vOQzOKLYtaKxM0Ci2LWisTNKHHBnZTRDWmd5dUJ5a3c2QzliNnJ5SmJyaWZiWT1aICIe//9GT2lTN2tsbm5DK0d2bGdRbVQwZ2JacUhtSG89ZZN5uh/CPgJgBRKvAQgTEqoBChw4Z0VsUzJsOXRYSHB2dU42QXcwb1ZGeVczTkU9EiQ1NzYwNWNjMC01YTgyLTRjNjktOWRhZC02MjJiYTk0Y2Y2YmEYACAAKAAw2K3rsr8zOJPf6rK/M0CT3+qyvzNKHFNNaEt3N1B0alBkTjVtcDY2WE1JVThEd3dOWT1aISIf///uUkRzNmd0YmVwQldET1NWQXVOUG1SV2Y2TlNnPWVqZO4Swj4CYAUSrwEIGBKqAQocK3p0NlBpalRLY3ZNcmVkbEloRm5XWFhTa2trPRIkYmI0MjI0NWItMTM1NS00YWUyLWFjYjYtNTE4MDQ5YzM3YzY0GAAgACgAMMrj4evjMzij5+Hr4zNAo+fh6+MzShw2NjU2eXhqVlorYTJFZFhvcXE2MEpFL3dLN009WiEiH////0FUU0FYZDJjY0dKQmtiRnVqb2tDbWtPRmo1WT1lAAAAAMI+AmAAEq8BCBYSqgEKHGtucEtpSzlwK2pNUjc4SnRiYktTYjRwRFM2WT0SJDk4MzQ4MmM2LWM4N2EtNDFlMS1iOWIyLTRmZWUwYWE2MTQ0ZRgAIAAoADDSgfD5zjM454Pw+c4zQOeD8PnOM0ocYVZTZFgrd0htam1pVXBPdjVYZkFPRVhrYVZFPVohIh////1GNWhYTjZaNVd0VzJOSlEzaTNaSXVFSEV3Y2M9ZX9rz9TCPgJgBRKsAQgZEqcBChw3Y01Bb0lCczFRTk5FTFhtQkJjTUxWUEFkak09EiQwZjYzYzM2OS02NjBlLTQ0ZDUtOGZlYi1iNjM2MmI0N2MzYWQYACAAKAAwy+Ph6+MzOOXn4evjM0Dl5+Hr4zNKHHlma1JNRlk5VG1iWTZPUHBUVVNSUGh2djI2ST1aHiIcQW9iQ3NwMlpyRGozdXFDK1dmK3NteTZ4SXY4PWUAAAAAwj4CYAISrAEIGhKnAQocL3BrMXBwVmhmRzBqdXRhUVRWUVZBWVZ5NlI4PRIkNTRjYTBlNDgtNDkxZC00MDBkLWJjNDUtZWExM2U2MTcyZTgyGAAgACgAMMzj4evjMzix6OHr4zNAsejh6+MzShw1MENaenNaTG1NdktMZFcxZEdsZm1Ya01LMTg9Wh4iHEM5ZGpORFFuenJlRHo3a1ZPRldyTmlHUHk2WT1lAAAAAMI+AmACEq8BCBcSqgEKHHlTR2xOVEFUT2tMaDkvNy9lV1ZhUTE0Z1FXST0SJGUwODNjZTBiLWM5YzMtNDU0My05ZDE2LTI1NjY3MTYxNWNiNRgAIAAoADDo5MKY4zM4v9KfoN4zQL/Sn6DeM0ocWWZycVZJTmNXVE9pbStGeEhDblVRTmtBaldFPVohIh////5XRnlRUGVNOG83eDJHc3lsRXNYc3ZTM3dPbGc9ZZMO8jHCPgJgBRKOAQgCEokBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiQ3ZTQ1YWM1My0wNDc2LTUxZjYtYmQ0Ni01YjUyOGZlMTA5MjcYACAAKAAwr5fo7/AuOPPHlPePMEDzx5T3jzBKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}

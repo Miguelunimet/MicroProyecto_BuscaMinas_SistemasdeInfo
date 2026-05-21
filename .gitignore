@@ -1,0 +1,6 @@
+# Archivos autogenerados de plataformas (Desktop)
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
+*generated_plugin_registrant*
+*.cmake
